@@ -1,0 +1,3303 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='UTF-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>W2A Automation Reports</title>
+
+	<style type='text/css'>
+			
+            
+                
+            
+        
+	</style>
+</head>
+
+	<body class='extent standard default hide-overflow bdd-report'>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>Automation Report for</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>Jun 2, 2020 05:25:18 PM</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>3.1.2</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>@AcordingItems</a></li>
+					<li><a href='#'>@ActionFeature</a></li>
+					<li><a href='#'>@DragandDrop</a></li>
+					<li><a href='#'>@LinkandHold</a></li>
+					<li><a href='#'>@Ajaxloader</a></li>
+					<li><a href='#'>@AutocompleteFileDatePicker</a></li>
+					<li><a href='#'>@Autocomplete</a></li>
+					<li><a href='#'>@SendFile</a></li>
+					<li><a href='#'>@PickDate</a></li>
+					<li><a href='#'>@DropdownMenuFeature</a></li>
+					<li><a href='#'>@DropdownMenu</a></li>
+					<li><a href='#'>@Checkbox</a></li>
+					<li><a href='#'>@AvaibleThings</a></li>
+					<li><a href='#'>@HiddenElements</a></li>
+					<li><a href='#'>@Iframe</a></li>
+					<li><a href='#'>@Iframe1</a></li>
+					<li><a href='#'>@Iframe2</a></li>
+					<li><a href='#'>@PopupAllert1</a></li>
+					<li><a href='#'>@PopupAllert2</a></li>
+					<li><a href='#'>@ButtonClick</a></li>
+					<li><a href='#'>@JavaScript</a></li>
+					<li><a href='#'>@Scrolling</a></li>
+					<li><a href='#'>@Scrolling1</a></li>
+					<li><a href='#'>@Scrolling2</a></li>
+					<li><a href='#'>@TodoList</a></li>
+					<li><a href='#'>@TodoListScenario1</a></li>
+					<li><a href='#'>@TodoListScenario2</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m4 l4 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Features</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>11</span> feature(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m4 l4 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Scenarios</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>35</span> scenario(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m4 l4 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>180</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Features</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>As a user i want to see text when i click on the tab</span>
+						<span class='test-time'>Jun 2, 2020 05:25:18 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenariooutline node' test-id='2' status='pass'>
+	<span class='duration right label'>0h 1m 17s+527ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">As a user I click on open tab and text should be nonvisible</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='3' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@AcordingItems</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">As a user I click on open tab and text should be nonvisible</span>
+			
+				<ul class='steps'>
+					<li test-id='4' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User navigate to Webuniversity website</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='5' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User click Accordion Text Affects</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='6' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User click on "//button[@id='manual-testing-accordion']" tab</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='7' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Text "//p[contains(text(),'Manual testing has for some time been the most pop')]" should be visible</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='8' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User click on open "//button[@id='manual-testing-accordion']"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='9' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Text "//button[@class='accordion active'][@id='manual-testing-accordion']" should be hidden</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='10' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@AcordingItems</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">As a user I click on open tab and text should be nonvisible</span>
+			
+				<ul class='steps'>
+					<li test-id='11' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User navigate to Webuniversity website</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='12' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User click Accordion Text Affects</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='13' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User click on "//button[@id='cucumber-accordion']" tab</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='14' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Text "//p[contains(text(),'Cucumber (BDD) simplifies the requirement capturin')]" should be visible</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='15' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User click on open "//button[@id='cucumber-accordion']"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='16' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Text "//button[@class='accordion active'][@id='cucumber-accordion']" should be hidden</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='17' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@AcordingItems</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">As a user I click on open tab and text should be nonvisible</span>
+			
+				<ul class='steps'>
+					<li test-id='18' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User navigate to Webuniversity website</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='19' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User click Accordion Text Affects</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='20' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User click on "//button[@id='automation-accordion']" tab</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='21' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Text "//p[contains(text(),'Automation testing has been steadily grown in popu')]" should be visible</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='22' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User click on open "//button[@id='automation-accordion']"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='23' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Text "//button[@class='accordion active'][@id='automation-accordion']" should be hidden</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='24' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@AcordingItems</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">As a user I click on open tab and text should be nonvisible</span>
+			
+				<ul class='steps'>
+					<li test-id='25' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User navigate to Webuniversity website</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='26' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User click Accordion Text Affects</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='27' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User click on "//button[@id='click-accordion']" tab</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='28' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Text "//div[@id='timeout']" should be visible</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='29' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User click on open "//button[@id='click-accordion']"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='30' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Text "//button[@class='accordion active'][@id='click-accordion']" should be hidden</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='31'>
+					<div class='test-heading'>
+						<span class='test-name'>As a user i want to do some actions on website</span>
+						<span class='test-time'>Jun 2, 2020 05:26:36 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='32' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@DragandDrop</span>
+	</div>
+	<span class='duration right label'>0h 0m 6s+237ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">User drag file to dropplace and dooble click on webelemtn</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='33' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User navigate to website webuniversity</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='34' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User drag file to dropplace and drop</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='35' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Color and text should change</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='36' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User dooble click on webelement</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='37' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Color should change</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenariooutline node' test-id='38' status='pass'>
+	<span class='duration right label'>0h 0m 59s+404ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">User click in one of 	three link and hold bottom button</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='39' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@ActionFeature</span>
+				<span class='category label white-text'>@LinkandHold</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">User click in one of 	three link and hold bottom button</span>
+			
+				<ul class='steps'>
+					<li test-id='40' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User navigate to website webuniversity</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='41' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User navigate to "//button[contains(text(),'Hover Over Me First!')]" dropdownmenu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='42' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User see "//div[@class='dropdown hover']//a[@class='list-alert'][contains(text(),'Link 1')]" link, he can clik in it</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='43' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then The aler should show up</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='44' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@ActionFeature</span>
+				<span class='category label white-text'>@LinkandHold</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">User click in one of 	three link and hold bottom button</span>
+			
+				<ul class='steps'>
+					<li test-id='45' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User navigate to website webuniversity</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='46' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User navigate to "//button[contains(text(),'Hover Over Me Second!')]" dropdownmenu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='47' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User see "//div[2]//div[1]//a[1]" link, he can clik in it</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='48' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then The aler should show up</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='49' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@ActionFeature</span>
+				<span class='category label white-text'>@LinkandHold</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">User click in one of 	three link and hold bottom button</span>
+			
+				<ul class='steps'>
+					<li test-id='50' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User navigate to website webuniversity</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='51' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User navigate to "//button[contains(text(),'Hover Over Me Third!')]" dropdownmenu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='52' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User see "//div[3]//div[1]//a[1]" link, he can clik in it</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='53' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then The aler should show up</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='54' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@ActionFeature</span>
+				<span class='category label white-text'>@LinkandHold</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">User click in one of 	three link and hold bottom button</span>
+			
+				<ul class='steps'>
+					<li test-id='55' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User navigate to website webuniversity</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='56' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User navigate to "//button[contains(text(),'Hover Over Me Third!')]" dropdownmenu</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='57' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User see "//body//a[2]" link, he can clik in it</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='58' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then The aler should show up</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='59'>
+					<div class='test-heading'>
+						<span class='test-name'>As a user i want to click on the button to see information</span>
+						<span class='test-time'>Jun 2, 2020 05:27:43 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='60' status='pass'>
+	<span class='duration right label'>0h 0m 12s+38ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">User navigate to website click on the button and see information</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='61' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User navigate to website</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='62' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User click on the button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='63' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Informaton should be visible</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='64'>
+					<div class='test-heading'>
+						<span class='test-name'>As a user I want to be able to chose something from a shop (autocomplete), upload file and pick a date</span>
+						<span class='test-time'>Jun 2, 2020 05:27:56 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='65' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@Autocomplete</span>
+	</div>
+	<span class='duration right label'>0h 0m 12s+28ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">User make a order and system should help him with that (autocomlpete)</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='66' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User navigate to main website</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='67' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User click on main page on Autocomplete text button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='68' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And input some text in textfield</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='69' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And System give him autocomplete text</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='70' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User is able to send order</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='71' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@SendFile</span>
+	</div>
+	<span class='duration right label'>0h 0m 16s+812ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">User send file</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='72' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User navigate to main website</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='73' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User click on the FileUpload button on main page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='74' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User choose file to send</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='75' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User click on Send button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='76' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then File should be successfully sended</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='77' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@PickDate</span>
+	</div>
+	<span class='duration right label'>0h 0m 9s+259ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">User pick a date</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='78' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User navigate to main website</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='79' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When user click on datepicker button on mainPage</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='80' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User select date</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='81' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then date should be successfully selected</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='82'>
+					<div class='test-heading'>
+						<span class='test-name'>As a user i want to choose my favorite options on Website</span>
+						<span class='test-time'>Jun 2, 2020 05:28:36 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenariooutline node' test-id='83' status='pass'>
+	<span class='duration right label'>0h 0m 45s+132ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">As a user i want to choose my language, IDE and Script from Dropdown Menu</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='84' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@DropdownMenuFeature</span>
+				<span class='category label white-text'>@DropdownMenu</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">As a user i want to choose my language, IDE and Script from Dropdown Menu</span>
+			
+				<ul class='steps'>
+					<li test-id='85' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User navigate to Webdriveruniversity website</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='86' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User click on Dropdownmenu on mainPage</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='87' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User select favorite "java" language</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='88' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User select favorite "eclipse" IDE</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='89' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User select favorite "html" Script</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='90' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Options should be successfully saved</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='91' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@DropdownMenuFeature</span>
+				<span class='category label white-text'>@DropdownMenu</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">As a user i want to choose my language, IDE and Script from Dropdown Menu</span>
+			
+				<ul class='steps'>
+					<li test-id='92' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User navigate to Webdriveruniversity website</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='93' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User click on Dropdownmenu on mainPage</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='94' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User select favorite "c#" language</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='95' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User select favorite "maven" IDE</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='96' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User select favorite "css" Script</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='97' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Options should be successfully saved</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='98' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@DropdownMenuFeature</span>
+				<span class='category label white-text'>@DropdownMenu</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">As a user i want to choose my language, IDE and Script from Dropdown Menu</span>
+			
+				<ul class='steps'>
+					<li test-id='99' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User navigate to Webdriveruniversity website</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='100' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User click on Dropdownmenu on mainPage</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='101' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User select favorite "python" language</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='102' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User select favorite "testng" IDE</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='103' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User select favorite "javascript" Script</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='104' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Options should be successfully saved</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='105' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@DropdownMenuFeature</span>
+				<span class='category label white-text'>@DropdownMenu</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">As a user i want to choose my language, IDE and Script from Dropdown Menu</span>
+			
+				<ul class='steps'>
+					<li test-id='106' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User navigate to Webdriveruniversity website</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='107' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User click on Dropdownmenu on mainPage</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='108' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User select favorite "sql" language</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='109' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User select favorite "junit" IDE</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='110' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User select favorite "jquery" Script</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='111' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Options should be successfully saved</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='112' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@Checkbox</span>
+	</div>
+	<span class='duration right label'>0h 0m 13s+148ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">As a user I want to select my favorite options from Checkboxe and color from RadioButton</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='113' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User navigate to Webdriveruniversity website</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='114' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User click on Dropdownmenu on mainPage</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='115' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User select favorite options</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='116' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User select favorite color</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='117' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Checkbox and RadioButton options should save</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='118' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@AvaibleThings</span>
+	</div>
+	<span class='duration right label'>0h 0m 28s+993ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">As a user I want to select avaible thing from Menu- Selected and Disabled</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='119' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User navigate to Webdriveruniversity website</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='120' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User click on Dropdownmenu on mainPage</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='121' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User want to select avaible product from menu</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='122' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Products should be successfully selected</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='123'>
+					<div class='test-heading'>
+						<span class='test-name'>As a user i want to be able to click on hidden elements and see information</span>
+						<span class='test-time'>Jun 2, 2020 05:30:05 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='124' status='pass'>
+	<span class='duration right label'>0h 0m 12s+466ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">User click on hidden elements</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='125' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User navigat to URL</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='126' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User scroll down page and click hidden elements</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='127' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When user click in button number one</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='128' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Alert should show up</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='129' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User click in button number two</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='130' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then alert number two should show up</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='131' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When user click in button number three</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='132' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then alert number three should show up</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='133'>
+					<div class='test-heading'>
+						<span class='test-name'>User want to buy some product in shop and send message via Iframe</span>
+						<span class='test-time'>Jun 2, 2020 05:30:18 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenariooutline node' test-id='134' status='pass'>
+	<span class='duration right label'>0h 0m 36s+157ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Product</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='135' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Iframe</span>
+				<span class='category label white-text'>@Iframe1</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Product</span>
+			
+				<ul class='steps'>
+					<li test-id='136' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User navigate to University website</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='137' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User scoll down page to Iframe button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='138' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User click on Iframe button, user should be navigate to shop website</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='139' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User click on our product button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='140' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And user click on product "//div[@id='container-product3']"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='141' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should get access to promocode "promocode1"</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='142' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Iframe</span>
+				<span class='category label white-text'>@Iframe1</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Product</span>
+			
+				<ul class='steps'>
+					<li test-id='143' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User navigate to University website</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='144' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User scoll down page to Iframe button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='145' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User click on Iframe button, user should be navigate to shop website</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='146' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User click on our product button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='147' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And user click on product "//div[@id='container-product1']"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='148' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then User should get access to promocode "promocode2"</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenariooutline node' test-id='149' status='pass'>
+	<span class='duration right label'>0h 0m 32s+961ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Contact Us</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='150' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Iframe</span>
+				<span class='category label white-text'>@Iframe2</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Contact Us</span>
+			
+				<ul class='steps'>
+					<li test-id='151' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User navigate to University website</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='152' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User scoll down page to Iframe button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='153' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User click on Iframe button, user should be navigate to shop website</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='154' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User click on Contact us tab</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='155' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User fill name "Greg"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='156' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User fill lastname "Sikora"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='157' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User fill mail address "1234@gmail.com"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='158' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User fill comment "comment1234"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='159' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then message should be successfully sended</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='160' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Iframe</span>
+				<span class='category label white-text'>@Iframe2</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Contact Us</span>
+			
+				<ul class='steps'>
+					<li test-id='161' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User navigate to University website</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='162' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User scoll down page to Iframe button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='163' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User click on Iframe button, user should be navigate to shop website</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='164' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User click on Contact us tab</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='165' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User fill name "Monika"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='166' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User fill lastname "Sikora"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='167' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User fill mail address "5678@gmail.com"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='168' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And User fill comment "comment5678"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='169' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then message should be successfully sended</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='170'>
+					<div class='test-heading'>
+						<span class='test-name'>As a user i want o to click on the button to see some popup</span>
+						<span class='test-time'>Jun 2, 2020 05:31:28 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='171' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@PopupAllert1</span>
+	</div>
+	<span class='duration right label'>0h 0m 9s+561ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">As a user i want to be able to click on the button to see popup</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='172' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User navigate to Popup alert website</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='173' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User click on the first Pop up</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='174' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Alert box show up</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='175' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User click on the second button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='176' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then the second alert box should show up</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='177' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@PopupAllert2</span>
+	</div>
+	<span class='duration right label'>0h 0m 12s+307ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">As a user i want to on trhid and fourth button</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='178' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User navigate to Popup alert website</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='179' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User click on third button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='180' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Third allert box should show up</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='181' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User click on fourth button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='182' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Fourth alert box should appear</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='183'>
+					<div class='test-heading'>
+						<span class='test-name'>As a user I want to click on the button</span>
+						<span class='test-time'>Jun 2, 2020 05:31:52 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='184' status='pass'>
+	<span class='duration right label'>0h 0m 9s+339ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">User click on the WebElementClick</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='185' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User navigate to Websiteuniversity</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='186' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User scroll down and click on the button clicks</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='187' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User click on WebElementClick</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='188' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Alert window is appering</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='189' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User click on the Close button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='190' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@JavaScript</span>
+	</div>
+	<span class='duration right label'>0h 0m 8s+652ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">User click on JavaScriptClick</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='191' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User navigate to Websiteuniversity</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='192' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User scroll down and click on the button clicks</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='193' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User click on JavaScriptClick</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='194' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Alert JavaScript window is appering</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='195' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User click on the JavaScript Close button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='196' status='pass'>
+	<span class='duration right label'>0h 0m 9s+265ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">User click on ActionMove&Click</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='197' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User navigate to Websiteuniversity</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='198' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User scroll down and click on the button clicks</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='199' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User click on ActionMove&Click</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='200' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Alert ActionMove&Click window is appering</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='201' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User click on the ActionMove Close button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='202'>
+					<div class='test-heading'>
+						<span class='test-name'>As a user i want to scroll around my website</span>
+						<span class='test-time'>Jun 2, 2020 05:32:21 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='203' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@Scrolling1</span>
+	</div>
+	<span class='duration right label'>0h 0m 59s+208ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">User is scroling  to scroll me first field</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='204' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User navigate to Just scroll around website</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='205' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User scroll to fiel text me first</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='206' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Text should change</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='207' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@Scrolling2</span>
+	</div>
+	<span class='duration right label'>0h 0m 9s+667ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">User scroll around to fields</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='208' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User navigate to Just scroll around website</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='209' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When user scroll around the fields</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='210' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then numbers on fields should change</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='211'>
+					<div class='test-heading'>
+						<span class='test-name'>As a user I wan to add and delete some position from my list</span>
+						<span class='test-time'>Jun 2, 2020 05:33:31 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenariooutline node' test-id='212' status='pass'>
+	<span class='duration right label'>0h 0m 27s+354ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">User add some position to list</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='213' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@TodoList</span>
+				<span class='category label white-text'>@TodoListScenario1</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">User add some position to list</span>
+			
+				<ul class='steps'>
+					<li test-id='214' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User navigate to website webdriveruniversity</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='215' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User click on ToDoList button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='216' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User write some "Harry Potter read" position and click enter button on keyboard</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='217' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Position "//li[contains(text(),'Harry Potter read')]" should be added to list like a last one on list</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='218' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@TodoList</span>
+				<span class='category label white-text'>@TodoListScenario1</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">User add some position to list</span>
+			
+				<ul class='steps'>
+					<li test-id='219' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User navigate to website webdriveruniversity</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='220' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User click on ToDoList button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='221' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User write some "Buy new clothes" position and click enter button on keyboard</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='222' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Position "//li[contains(text(),'Buy new clothes')]" should be added to list like a last one on list</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+		<li test-id='223' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@TodoList</span>
+				<span class='category label white-text'>@TodoListScenario1</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">User add some position to list</span>
+			
+				<ul class='steps'>
+					<li test-id='224' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given User navigate to website webdriveruniversity</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='225' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User click on ToDoList button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='226' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User write some "Programing learn" position and click enter button on keyboard</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='227' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Position "//li[contains(text(),'Programing learn')]" should be added to list like a last one on list</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='228' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@TodoListScenario2</span>
+	</div>
+	<span class='duration right label'>0h 0m 11s+272ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">User delete some position from list</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='229' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User navigate to website webdriveruniversity</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='230' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User click on ToDoList button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='231' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User delete position from a list</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='232' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Position should be deleted</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view -->
+<div id='category-view' class='view hide'>
+
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+				
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Categories</h3>
+			<ul id='category-collection' class='category-collection'>
+				
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@AcordingItems</span>
+						<span class='category-status right'>
+							<span class='label pass'>5</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 5</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 2, 2020 05:25:18 PM</td>
+										<td class='linked' test-id='1'>As a user i want to see text when i click on the tab</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2020 05:25:18 PM</td>
+										<td class='linked' test-id='3'>As a user i want to see text when i click on the tab.As a user I click on open tab and text should be nonvisible.As a user I click on open tab and text should be nonvisible</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2020 05:25:38 PM</td>
+										<td class='linked' test-id='10'>As a user i want to see text when i click on the tab.As a user I click on open tab and text should be nonvisible.As a user I click on open tab and text should be nonvisible</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2020 05:25:58 PM</td>
+										<td class='linked' test-id='17'>As a user i want to see text when i click on the tab.As a user I click on open tab and text should be nonvisible.As a user I click on open tab and text should be nonvisible</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2020 05:26:17 PM</td>
+										<td class='linked' test-id='24'>As a user i want to see text when i click on the tab.As a user I click on open tab and text should be nonvisible.As a user I click on open tab and text should be nonvisible</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@ActionFeature</span>
+						<span class='category-status right'>
+							<span class='label pass'>5</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 5</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 2, 2020 05:26:36 PM</td>
+										<td class='linked' test-id='31'>As a user i want to do some actions on website</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2020 05:26:43 PM</td>
+										<td class='linked' test-id='39'>As a user i want to do some actions on website.User click in one of 	three link and hold bottom button.User click in one of 	three link and hold bottom button</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2020 05:26:58 PM</td>
+										<td class='linked' test-id='44'>As a user i want to do some actions on website.User click in one of 	three link and hold bottom button.User click in one of 	three link and hold bottom button</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2020 05:27:13 PM</td>
+										<td class='linked' test-id='49'>As a user i want to do some actions on website.User click in one of 	three link and hold bottom button.User click in one of 	three link and hold bottom button</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2020 05:27:28 PM</td>
+										<td class='linked' test-id='54'>As a user i want to do some actions on website.User click in one of 	three link and hold bottom button.User click in one of 	three link and hold bottom button</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@DragandDrop</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 2, 2020 05:26:36 PM</td>
+										<td class='linked' test-id='32'>As a user i want to do some actions on website.User drag file to dropplace and dooble click on webelemtn</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@LinkandHold</span>
+						<span class='category-status right'>
+							<span class='label pass'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 4</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 2, 2020 05:26:43 PM</td>
+										<td class='linked' test-id='39'>As a user i want to do some actions on website.User click in one of 	three link and hold bottom button.User click in one of 	three link and hold bottom button</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2020 05:26:58 PM</td>
+										<td class='linked' test-id='44'>As a user i want to do some actions on website.User click in one of 	three link and hold bottom button.User click in one of 	three link and hold bottom button</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2020 05:27:13 PM</td>
+										<td class='linked' test-id='49'>As a user i want to do some actions on website.User click in one of 	three link and hold bottom button.User click in one of 	three link and hold bottom button</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2020 05:27:28 PM</td>
+										<td class='linked' test-id='54'>As a user i want to do some actions on website.User click in one of 	three link and hold bottom button.User click in one of 	three link and hold bottom button</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Ajaxloader</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 2, 2020 05:27:43 PM</td>
+										<td class='linked' test-id='59'>As a user i want to click on the button to see information</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@AutocompleteFileDatePicker</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 2, 2020 05:27:56 PM</td>
+										<td class='linked' test-id='64'>As a user I want to be able to chose something from a shop (autocomplete), upload file and pick a date</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Autocomplete</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 2, 2020 05:27:56 PM</td>
+										<td class='linked' test-id='65'>As a user I want to be able to chose something from a shop (autocomplete), upload file and pick a date.User make a order and system should help him with that (autocomlpete)</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@SendFile</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 2, 2020 05:28:09 PM</td>
+										<td class='linked' test-id='71'>As a user I want to be able to chose something from a shop (autocomplete), upload file and pick a date.User send file</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@PickDate</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 2, 2020 05:28:26 PM</td>
+										<td class='linked' test-id='77'>As a user I want to be able to chose something from a shop (autocomplete), upload file and pick a date.User pick a date</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@DropdownMenuFeature</span>
+						<span class='category-status right'>
+							<span class='label pass'>5</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 5</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 2, 2020 05:28:36 PM</td>
+										<td class='linked' test-id='82'>As a user i want to choose my favorite options on Website</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2020 05:28:36 PM</td>
+										<td class='linked' test-id='84'>As a user i want to choose my favorite options on Website.As a user i want to choose my language, IDE and Script from Dropdown Menu.As a user i want to choose my language, IDE and Script from Dropdown Menu</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2020 05:28:47 PM</td>
+										<td class='linked' test-id='91'>As a user i want to choose my favorite options on Website.As a user i want to choose my language, IDE and Script from Dropdown Menu.As a user i want to choose my language, IDE and Script from Dropdown Menu</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2020 05:28:58 PM</td>
+										<td class='linked' test-id='98'>As a user i want to choose my favorite options on Website.As a user i want to choose my language, IDE and Script from Dropdown Menu.As a user i want to choose my language, IDE and Script from Dropdown Menu</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2020 05:29:10 PM</td>
+										<td class='linked' test-id='105'>As a user i want to choose my favorite options on Website.As a user i want to choose my language, IDE and Script from Dropdown Menu.As a user i want to choose my language, IDE and Script from Dropdown Menu</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@DropdownMenu</span>
+						<span class='category-status right'>
+							<span class='label pass'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 4</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 2, 2020 05:28:36 PM</td>
+										<td class='linked' test-id='84'>As a user i want to choose my favorite options on Website.As a user i want to choose my language, IDE and Script from Dropdown Menu.As a user i want to choose my language, IDE and Script from Dropdown Menu</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2020 05:28:47 PM</td>
+										<td class='linked' test-id='91'>As a user i want to choose my favorite options on Website.As a user i want to choose my language, IDE and Script from Dropdown Menu.As a user i want to choose my language, IDE and Script from Dropdown Menu</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2020 05:28:58 PM</td>
+										<td class='linked' test-id='98'>As a user i want to choose my favorite options on Website.As a user i want to choose my language, IDE and Script from Dropdown Menu.As a user i want to choose my language, IDE and Script from Dropdown Menu</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2020 05:29:10 PM</td>
+										<td class='linked' test-id='105'>As a user i want to choose my favorite options on Website.As a user i want to choose my language, IDE and Script from Dropdown Menu.As a user i want to choose my language, IDE and Script from Dropdown Menu</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Checkbox</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 2, 2020 05:29:22 PM</td>
+										<td class='linked' test-id='112'>As a user i want to choose my favorite options on Website.As a user I want to select my favorite options from Checkboxe and color from RadioButton</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@AvaibleThings</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 2, 2020 05:29:35 PM</td>
+										<td class='linked' test-id='118'>As a user i want to choose my favorite options on Website.As a user I want to select avaible thing from Menu- Selected and Disabled</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@HiddenElements</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 2, 2020 05:30:05 PM</td>
+										<td class='linked' test-id='123'>As a user i want to be able to click on hidden elements and see information</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Iframe</span>
+						<span class='category-status right'>
+							<span class='label pass'>5</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 5</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 2, 2020 05:30:18 PM</td>
+										<td class='linked' test-id='133'>User want to buy some product in shop and send message via Iframe</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2020 05:30:18 PM</td>
+										<td class='linked' test-id='135'>User want to buy some product in shop and send message via Iframe.Product.Product</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2020 05:30:36 PM</td>
+										<td class='linked' test-id='142'>User want to buy some product in shop and send message via Iframe.Product.Product</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2020 05:30:55 PM</td>
+										<td class='linked' test-id='150'>User want to buy some product in shop and send message via Iframe.Contact Us.Contact Us</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2020 05:31:12 PM</td>
+										<td class='linked' test-id='160'>User want to buy some product in shop and send message via Iframe.Contact Us.Contact Us</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Iframe1</span>
+						<span class='category-status right'>
+							<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 2, 2020 05:30:18 PM</td>
+										<td class='linked' test-id='135'>User want to buy some product in shop and send message via Iframe.Product.Product</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2020 05:30:36 PM</td>
+										<td class='linked' test-id='142'>User want to buy some product in shop and send message via Iframe.Product.Product</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Iframe2</span>
+						<span class='category-status right'>
+							<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 2, 2020 05:30:55 PM</td>
+										<td class='linked' test-id='150'>User want to buy some product in shop and send message via Iframe.Contact Us.Contact Us</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2020 05:31:12 PM</td>
+										<td class='linked' test-id='160'>User want to buy some product in shop and send message via Iframe.Contact Us.Contact Us</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@PopupAllert1</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 2, 2020 05:31:28 PM</td>
+										<td class='linked' test-id='171'>As a user i want o to click on the button to see some popup.As a user i want to be able to click on the button to see popup</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@PopupAllert2</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 2, 2020 05:31:39 PM</td>
+										<td class='linked' test-id='177'>As a user i want o to click on the button to see some popup.As a user i want to on trhid and fourth button</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@ButtonClick</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 2, 2020 05:31:52 PM</td>
+										<td class='linked' test-id='183'>As a user I want to click on the button</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@JavaScript</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 2, 2020 05:32:01 PM</td>
+										<td class='linked' test-id='190'>As a user I want to click on the button.User click on JavaScriptClick</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Scrolling</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 2, 2020 05:32:21 PM</td>
+										<td class='linked' test-id='202'>As a user i want to scroll around my website</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Scrolling1</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 2, 2020 05:32:21 PM</td>
+										<td class='linked' test-id='203'>As a user i want to scroll around my website.User is scroling  to scroll me first field</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Scrolling2</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 2, 2020 05:33:20 PM</td>
+										<td class='linked' test-id='207'>As a user i want to scroll around my website.User scroll around to fields</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@TodoList</span>
+						<span class='category-status right'>
+							<span class='label pass'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 4</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 2, 2020 05:33:31 PM</td>
+										<td class='linked' test-id='211'>As a user I wan to add and delete some position from my list</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2020 05:33:31 PM</td>
+										<td class='linked' test-id='213'>As a user I wan to add and delete some position from my list.User add some position to list.User add some position to list</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2020 05:33:40 PM</td>
+										<td class='linked' test-id='218'>As a user I wan to add and delete some position from my list.User add some position to list.User add some position to list</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2020 05:33:49 PM</td>
+										<td class='linked' test-id='223'>As a user I wan to add and delete some position from my list.User add some position to list.User add some position to list</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@TodoListScenario1</span>
+						<span class='category-status right'>
+							<span class='label pass'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 3</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 2, 2020 05:33:31 PM</td>
+										<td class='linked' test-id='213'>As a user I wan to add and delete some position from my list.User add some position to list.User add some position to list</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2020 05:33:40 PM</td>
+										<td class='linked' test-id='218'>As a user I wan to add and delete some position from my list.User add some position to list.User add some position to list</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 2, 2020 05:33:49 PM</td>
+										<td class='linked' test-id='223'>As a user I wan to add and delete some position from my list.User add some position to list.User add some position to list</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@TodoListScenario2</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 2, 2020 05:33:59 PM</td>
+										<td class='linked' test-id='228'>As a user I wan to add and delete some position from my list.User delete some position from list</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view -->
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Features
+					<div class='panel-lead'>11</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Scenarios
+					<div class='panel-lead'>35</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>180</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Jun 2, 2020 05:25:18 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Jun 2, 2020 05:34:11 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>532,676ms</div>
+				</div>
+			</div>
+			<div class='col s6'>
+				<div class='card-panel dashboard-categories'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Others</th>
+							<th>Passed %</th>
+						</tr>
+						<tr>
+							<td>@AcordingItems</td>
+							<td>5</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@ActionFeature</td>
+							<td>5</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@DragandDrop</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@LinkandHold</td>
+							<td>4</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Ajaxloader</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@AutocompleteFileDatePicker</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Autocomplete</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@SendFile</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@PickDate</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@DropdownMenuFeature</td>
+							<td>5</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@DropdownMenu</td>
+							<td>4</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Checkbox</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@AvaibleThings</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@HiddenElements</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Iframe</td>
+							<td>5</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Iframe1</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Iframe2</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@PopupAllert1</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@PopupAllert2</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@ButtonClick</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@JavaScript</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Scrolling</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Scrolling1</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Scrolling2</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@TodoList</td>
+							<td>4</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@TodoListScenario1</td>
+							<td>3</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@TodoListScenario2</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 11,
+				failParent: 0,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 0,
+				
+				passChild: 35,
+				failChild: 0,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				exceptionsChild: 0,
+				
+				passGrandChild: 180,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		
+			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/fca20fb7653aade98810546ab96a2a4360e3e712/dist/js/extent.js' type='text/javascript'></script>
+		
+		
+ 		<script type='text/javascript'>
+ 			
+            
+                $(document).ready(function() {
+                    
+                });
+            
+        
+ 		</script>
+	</body>
+	
+</html>
